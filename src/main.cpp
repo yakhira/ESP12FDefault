@@ -6,11 +6,8 @@ const int SKETCH_VERSION = 1;
 ESPWiFi espwifi("ESP12-F");
 
 void setup() {
-	Serial.begin(74880);
 	espwifi.wifiConnect();
 	espwifi.updateSketch(SKETCH_VERSION);
-	Serial.println(WIFI_AP);
-	Serial.println(WiFi.getMode());
 
 	// GPIO16 + RST
 	// ESP.deepSleepInstant(60e6);
