@@ -20,7 +20,6 @@ class ESPWiFi: public ESPUtils {
 
         static void handleMain();
         static void handleSave();
-        static void handleUpdateSketch();
 
         void wifiConnect();
         void stateCheck();
