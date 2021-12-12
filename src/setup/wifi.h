@@ -5,9 +5,9 @@
 
 class ESPWiFi: public ESPUtils {
     private:
-        static const char *defaultWifiPassword;
-        static String espChipName;
+        static const String defaultWifiPassword;
         static const String configFile;
+        static String espChipName;
         static JSONVar wifiConfig;
 
         char *hostname;

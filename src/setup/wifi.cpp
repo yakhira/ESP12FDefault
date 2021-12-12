@@ -16,7 +16,7 @@ String ESPWiFi::espChipName;
 String ESPWiFi::otaUpdateUrl;
 String ESPWiFi::dataUrl;
 
-const char *ESPWiFi::defaultWifiPassword = "ESPp@$$w0rd!";
+const String ESPWiFi::defaultWifiPassword = "ESPp@$$w0rd!";
 const String ESPWiFi::configFile = "/wifi_config.json";
 
 ESPWiFi::ESPWiFi(String chipName){
