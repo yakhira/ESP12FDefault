@@ -7,10 +7,12 @@ ESPWiFi espwifi("ESP12-F");
 
 void setup() {
 	espwifi.wifiConnect();
-	espwifi.updateSketch(SKETCH_VERSION);
+	if (WiFi.getMode() == WIFI_STA) {
+		espwifi.updateSketch(SKETCH_VERSION);
 
-	// GPIO16 + RST
-	// ESP.deepSleepInstant(60e6);
+		// GPIO16 + RST
+		// ESP.deepSleepInstant(60e6);
+	}
 }
 
 void loop() {
