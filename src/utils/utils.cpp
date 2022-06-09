@@ -1,6 +1,7 @@
 #include "utils.h"
 
 ESPUtils::ESPUtils(){
+	
 }
 
 ESPUtils::~ESPUtils(){
@@ -60,6 +61,8 @@ void ESPUtils::readFile(String filename, String &data) {
 }
 
 void ESPUtils::listDir(const char * dirname, uint8_t levels){
+	mountFS();
+
     Serial.printf("Listing directory: %s\r\n", dirname);
 
     File root = LittleFS.open(dirname, "r");

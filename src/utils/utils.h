@@ -3,13 +3,11 @@
 
 #include <Arduino.h>
 #include <Arduino_JSON.h>
+#include <ESPAsyncWebServer.h>
 
 #if defined(ESP32)
-#include <LITTLEFS.h>
 #include "ESP32httpUpdate.h"
-#define LittleFS LITTLEFS
 #else
-#include <ESP8266HTTPClient.h>
 #include "ESP8266httpUpdate.h"
 #include <LittleFS.h>
 #endif
@@ -33,6 +31,7 @@ class ESPUtils {
         t_httpUpdate_return updateSketch(String url);
 
         WiFiClient client;
+
         ESPUtils();
         ~ESPUtils();
 };
