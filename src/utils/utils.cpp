@@ -144,9 +144,5 @@ bool ESPUtils::sendHTTPJsonData(String url, JSONVar data) {
 }
 
 t_httpUpdate_return ESPUtils::updateSketch(String url){
-	#if defined(ESP32)
-		return ESPhttpUpdate.update(url);
-	#else
-  		return ESPhttpUpdate.update(client, url);
-	#endif
+  	return ESPhttpUpdate.update(client, url);
 }

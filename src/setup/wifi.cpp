@@ -104,11 +104,7 @@ void ESPWiFi::wifiConnect(){
                 esputils.saveFile(ESPWiFi::configFile,  ESPWiFi::wifiConfig);
 
                 if (request->arg("restart_device") == "on") {
-                    #if defined(ESP32) 
-                        ESP.restart();
-                    #else
-                        ESP.reset();
-                    #endif
+                    ESP.reset();
                 } else {
                     request->send(200, "text/html", "Accepted. Please restart device.");
                 }

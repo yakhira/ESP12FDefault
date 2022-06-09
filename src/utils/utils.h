@@ -4,13 +4,8 @@
 #include <Arduino.h>
 #include <Arduino_JSON.h>
 #include <ESPAsyncWebServer.h>
-
-#if defined(ESP32)
-#include "ESP32httpUpdate.h"
-#else
 #include "ESP8266httpUpdate.h"
 #include <LittleFS.h>
-#endif
 
 class ESPUtils {
     public:
