@@ -9,7 +9,7 @@ String ESPWiFi::otaUpdateUrl;
 String ESPWiFi::dataUrl;
 
 const String ESPWiFi::defaultWifiPassword = "ESPp@$$w0rd!";
-const String ESPWiFi::configFile = "/config/wifi_config.json";
+const String ESPWiFi::configFile = "/wifi_config.json";
 
 AsyncWebServer server(80);
 
