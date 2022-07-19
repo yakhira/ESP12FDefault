@@ -14,7 +14,6 @@ const String ESPWiFi::configFile = "/wifi_config.json";
 AsyncWebServer server(80);
 
 ESPWiFi::ESPWiFi(String chipName){
-    isWebServerRunning = false;
     espChipName = chipName;
     resetCount = 0;
 }
@@ -114,8 +113,6 @@ void ESPWiFi::wifiConnect(){
 		});
 
         server.begin();
-
-        isWebServerRunning = true;
     }
 }
 
