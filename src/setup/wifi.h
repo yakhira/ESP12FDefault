@@ -11,7 +11,6 @@ class ESPWiFi: public ESPUtils {
         static JSONVar wifiConfig;
 
         char *hostname;
-        bool isWebServerRunning;
         int resetCount;
 
     public:
