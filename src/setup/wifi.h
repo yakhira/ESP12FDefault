@@ -17,9 +17,6 @@ class ESPWiFi: public ESPUtils {
         ESPWiFi(String chipName);
         ~ESPWiFi();
 
-        static void handleMain();
-        static void handleSave();
-
         void wifiConnect();
         void stateCheck();
         void loadConfig();
