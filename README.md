@@ -6,9 +6,9 @@
 * Upload sketch
 * Connect to http://192.168.4.1
 
-        SSID: ESP-\<random\><br />
-        PASSWORD: ESPp@$$w0rd!<br />
-        PORT: 80<br />
+        SSID: ESP-<random>
+        PASSWORD: ESPp@$$w0rd!
+        PORT: 80
 
 ## Reset
 
